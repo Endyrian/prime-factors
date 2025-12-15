@@ -22,9 +22,20 @@ To install, download `my_primes.py` and `my_binary_sort.py`.
 
 ## Usage
 
-Both `my_primes.py` and `my_binary_sort.py` are intended to be used as libraries.
-However, both may be run as standalone programs.
+### `my_primes.py`
 
-To use `my_primes.py`, run it in the command line. When prompted, enter an integer. You should see a list of all of said integer's prime factors printed out, including duplicate factors. You may either continue to enter integers or type 'q' to end the program.
+`is_prime(int)`:
+Returns whether or not the input is prime.
+
+`prime_factors(int)`:
+Returns a list of all the input's prime factors.
+Duplicate factors will appear the same amount of times that they factor in.
+
+Running `my_primes.py` in the command line will call `prime_factors()` on the input.
+This will repeat until `q` is inputted.
+
+### `my_binary_sort.py`
+
+`binary_search()`
 
 To use `my_binary_sort.py`, run it in the command line. When prompted, enter a list of integers. You should see a sorted version of that list printed out.
