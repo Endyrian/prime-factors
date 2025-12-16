@@ -24,18 +24,30 @@ To install, download `my_primes.py` and `my_binary_sort.py`.
 
 ### `my_primes.py`
 
-`is_prime(int)`:
-Returns whether or not the input is prime.
+`is_prime(num)`:
+Returns whether or not `num` is prime.
 
-`prime_factors(int)`:
-Returns a list of all the input's prime factors.
+`prime_factors(num)`:
+Returns a list of all of `num`'s prime factors.
 Duplicate factors will appear the same amount of times that they factor in.
 
-Running `my_primes.py` in the command line will call `prime_factors()` on the input.
+Running `my_primes.py` as the main file will call `prime_factors()` on the input and print the result.
 This will repeat until `q` is inputted.
 
 ### `my_binary_sort.py`
 
-`binary_search()`
+`binary_search(arr, val)`:
+Assumes `arr` is a sorted array.
+Returns the index of the rightmost element of `arr` that is less than or equal to `val`.
+Returns `-1` if all elements of `arr` are greater than `val`.
 
-To use `my_binary_sort.py`, run it in the command line. When prompted, enter a list of integers. You should see a sorted version of that list printed out.
+`binary_insert(arr, val, allow_duplicates)`:
+Assumes `arr` is a sorted array.
+Inserts `val` into `arr` in sorted order.
+`allow_duplicates` is `True` by default.
+If `allow_duplicates` is set to `False`, `val` will only be added if there are no identical values already present in `arr`.
+
+`binary_insertion_sort(arr)`:
+Sorts `arr` using binary insertion sort.
+
+Running `my_binary_sort.py` as the main file will call `binary_insertion_sort() on the input and print the result.
